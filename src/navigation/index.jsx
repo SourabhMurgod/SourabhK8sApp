@@ -13,6 +13,10 @@ import EventTemp1 from "../components/EventComponents/EventTempF1";
 import EventTemp2 from "../components/EventComponents/EventTempF2";
 import EventTemp3 from "../components/EventComponents/EventTempF3";
 import EventTemp4 from "../components/EventComponents/EventTempF4";
+import EventTemp5 from "../components/EventComponents/EventTempF5";
+import EventTemp6 from "../components/EventComponents/EventTempF6";
+import EventTemp7 from "../components/EventComponents/EventTempF7";
+import EventTemp8 from "../components/EventComponents/EventTempF8";
 import ChooseField from "../pages/ChooseField";
 import PaymentSuccess from "../pages/PaymentSuccess";
 import FinalBeginier from "../pages/FinalBeginer";
@@ -42,6 +46,10 @@ const Navigation = () => {
                 <Route path="/eventtemp2" element={<EventTemp2 />} />
                 <Route path="/eventtemp3" element={<EventTemp3 />} />
                 <Route path="/eventtemp4" element={<EventTemp4 />} />
+                <Route path="/eventtemp5" element={<EventTemp5 />} />
+                <Route path="/eventtemp6" element={<EventTemp6 />} />
+                <Route path="/eventtemp7" element={<EventTemp7 />} />
+                <Route path="/eventtemp8" element={<EventTemp8 />} />
                 <Route path="/choosefield" element={<ChooseField />} />
                 <Route path="/finalbeginer" element={<FinalBeginier />} />
                 <Route path="/finalpractice" element={<FinalPractice />} />

@@ -2,6 +2,11 @@ import beginer from "../assets/images/BeginerLvl.png";
 import EventTempF1 from "./EventComponents/EventTempF1";
 import EventTempF2 from "./EventComponents/EventTempF2";
 import EventTempF3 from "./EventComponents/EventTempF3";
+import EventTempF4 from "./EventComponents/EventTempF4";
+import EventTempF5 from "./EventComponents/EventTempF5";
+import EventTempF6 from "./EventComponents/EventTempF6";
+import EventTempF7 from "./EventComponents/EventTempF7";
+import EventTempF8 from "./EventComponents/EventTempF8";
 import Button from "./elements/Button";
 import { useForm } from "react-hook-form";
 import intermediat from "../assets/images/IntermediateLvl.png";
@@ -58,6 +63,36 @@ export const ChooseEvent = ({ email }) => {
             {Array.from({ length: 1 }, (_, index) => (
                 <div className="p-4 grid grid-cols-0">
                     <EventTempF3 key={index} email={email} />
+                </div>
+            ))}
+
+            {Array.from({ length: 1 }, (_, index) => (
+                <div className="p-4 grid grid-cols-0">
+                    <EventTempF4 key={index} email={email} />
+                </div>
+            ))}
+
+            {Array.from({ length: 1 }, (_, index) => (
+                <div className="p-4 grid grid-cols-0">
+                    <EventTempF5 key={index} email={email} />
+                </div>
+            ))}
+
+            {Array.from({ length: 1 }, (_, index) => (
+                <div className="p-4 grid grid-cols-0">
+                    <EventTempF6 key={index} email={email} />
+                </div>
+            ))}
+
+            {Array.from({ length: 1 }, (_, index) => (
+                <div className="p-4 grid grid-cols-0">
+                    <EventTempF7 key={index} email={email} />
+                </div>
+            ))}
+
+            {Array.from({ length: 1 }, (_, index) => (
+                <div className="p-4 grid grid-cols-0">
+                    <EventTempF8 key={index} email={email} />
                 </div>
             ))}
         </div>
