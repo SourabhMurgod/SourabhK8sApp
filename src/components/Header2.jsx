@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import Button from "./elements/Button";
 import { useEffect, useState } from "react";
-import PersonIcon from '@mui/icons-material/Person';
+// import PersonIcon from '@mui/icons-material/Person';
 
 export const Header2 = ({ email }) => {
     const navigate = useNavigate();
