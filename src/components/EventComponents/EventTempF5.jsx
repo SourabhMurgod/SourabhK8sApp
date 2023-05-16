@@ -51,13 +51,13 @@ export const EventTemp5 = ({ email }) => {
                 </div>
 
                 <div className="w-1/3">
-                    <div className="flex flex-col rounded-lg bg-white shadow-[0 2px 15px -3px rgba(0,0,0,0.07), 0 10px 20px -2px rgba(0,0,0,0.04)] dark:bg-neutral-700">
+                    <div className="flex flex-col rounded-lg bg-white shadow-[0 2px 15px -3px rgba(0,0,0,0.07), 0 10px 20px -2px rgba(0,0,0,0.04)] dark:bg-white-700">
                         <div className="flex flex-col justify-start p-4 sm:p-6">
                             <div className="backdrop-filter backdrop-blur-sm py-2 sm:py-4">
-                                <h5 className="mb-1 text-sm font-medium text-neutral-800 dark:text-neutral-50 capitalize sm:text-base md:text-base lg:text-lg xl:text-xl 2xl:text-xl" style={{ fontFamily: '' }}>
+                                <h5 className="mb-1 text-sm font-medium text-neutral-800 dark:text-black-50 capitalize sm:text-base md:text-base lg:text-lg xl:text-xl 2xl:text-xl" style={{ fontFamily: '' }}>
                                     {eventProblemStatementTitle}
                                 </h5>
-                                <p className="mb-3 text-xs text-neutral-600 dark:text-neutral-200 sm:text-sm md:text-base lg:text-base xl:text-lg 2xl:text-lg">
+                                <p className="mb-3 text-xs text-neutral-600 dark:text-black-200 sm:text-sm md:text-base lg:text-base xl:text-lg 2xl:text-lg">
                                     {eventProblemStatementBrief}
                                 </p>
                             </div>
