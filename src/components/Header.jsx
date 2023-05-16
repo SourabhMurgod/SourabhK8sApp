@@ -64,3 +64,5 @@ export const Header = ({ cartCount }) => {
                 </div>
             </div>
         </nav>
+    )
+}

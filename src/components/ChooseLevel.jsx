@@ -7,27 +7,27 @@ import practice from "../assets/images/practive.png";
 import advanced from "../assets/images/advanced.png";
 import { useNavigate } from "react-router-dom";
 
-export const ChooseLevel = () => {
+export const ChooseLevel = ({ email }) => {
     let navigate = useNavigate();
     const { chooselevel, handleSubmit } = useForm();
-
+    console.log(email+" successfully recieved email in chooselvl page")
     const onSubmit1 = (data) => {
-        navigate('/finalpractice');
+        navigate('/finalpractice', { state: { email: email } });
         
     }
 
     const onSubmit2 = (data) => {
-        navigate('/finalbeginer');
+        navigate('/finalbeginer', { state: { email: email } });
         
     }
 
     const onSubmit3 = (data) => {
-        navigate('/finalintermediate');
+        navigate('/finalintermediate', { state: { email: email } });
         
     }
 
     const onSubmit4 = (data) => {
-        navigate('/finaladvanced');
+        navigate('/finaladvanced', { state: { email: email } });
         
     }
 

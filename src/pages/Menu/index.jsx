@@ -1,11 +1,12 @@
 // import { Banner } from "../../components/BannerAfterLogin";
 import { ChooseLevel } from "../../components/ChooseLevel";
-import { Header } from "../../components/Header2";
-import { ProductsPreview } from "../../components/ProductsPreview";
+import { Header2 } from "../../components/Header2";
+import { useLocation } from 'react-router-dom';
+// import { ProductsPreview } from "../../components/ProductsPreview";
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchProducts, selectAllProducts } from "../../stores/menu/productsSlice";
-import ProductDetailCard from "../../   components/ProductDetailCard";
+import ProductDetailCard from "../../components/ProductDetailCard";
 import { Tabs } from "../../components/Tabs";
 import { addToCart } from "../../stores/cart/cartSlice";
 
@@ -14,6 +15,9 @@ const Menu = () => {
     // const products = useSelector(selectAllProducts);
     const [activeTab, setActiveTab] = useState('');
     const [activeTabIndex, setActiveTabIndex] = useState(0);
+    const location = useLocation();
+    const email = location.state.email;
+    console.log(email+" successfully reached menue")
 
     // useEffect(() => {
     //     dispatch(fetchProducts())
@@ -38,7 +42,13 @@ const Menu = () => {
     return (
         <>
             {/* <Banner /> */}
-            <Header />
+            <Header2 email={email}/>
             {/* <ProductsPreview /> */}
-            <ChooseLevel />
-        
+            <ChooseLevel email={email}/>
+        </>
+    )
+      
+
+}
+
+export default Menu;

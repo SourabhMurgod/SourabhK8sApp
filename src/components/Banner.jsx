@@ -12,9 +12,12 @@ export const Banner = () => {
                 </p>
                 <div className="btn-container">
                     <Button>Get Started Now</Button>
-                    <a href="/menu" className="text-yellow-400 hover:text-yellow-500 font-bold text-decoration-line px-3">
+                    <a className="text-yellow-400 hover:text-yellow-500 font-bold text-decoration-line px-3">
                         See More
                     </a>
+                    {/* <a href="/menu" className="text-yellow-400 hover:text-yellow-500 font-bold text-decoration-line px-3">
+                        See More
+                    </a> */}
                 </div>
             </div>
             <div className="banner-image w-full md:w-1/2 p-3 flex justify-end">

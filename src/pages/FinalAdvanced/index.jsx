@@ -1,4 +1,5 @@
 import { Banner } from "../../components/BannerAfterLogin";
+import { Header2 } from "../../components/Header2";
 import Button from "../../components/elements/Button";
 import tg from "../../assets/images/terminalimg.png";
 import { ChooseLevel } from "../../components/ChooseLevel";
@@ -10,12 +11,17 @@ import { fetchProducts, selectAllProducts } from "../../stores/menu/productsSlic
 import ProductDetailCard from "../../components/ProductDetailCard";
 import { Tabs } from "../../components/Tabs";
 import { addToCart } from "../../stores/cart/cartSlice";
+import { useLocation } from 'react-router-dom';
 
 const FinalAdvanced = () => {
+
+    const location = useLocation();
+    const email = location.state.email;
     
 
     return (
         <>
+            <Header2 email={email}/>
             <Banner />
             <div className="bg-white">
             <div className="p-5 grid grid-cols-2    ">

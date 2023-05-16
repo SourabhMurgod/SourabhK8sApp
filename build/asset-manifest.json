@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/static/css/main.eab6885f.css",
+    "main.js": "/static/js/main.f605f8d0.js",
+    "static/js/787.5423a34b.chunk.js": "/static/js/787.5423a34b.chunk.js",
+    "static/media/battle.webp": "/static/media/battle.4c1da39e627e735dc139.webp",
+    "static/media/terminalimg.png": "/static/media/terminalimg.d4817e87e241b491ef36.png",
+    "static/media/coverImg2.png": "/static/media/coverImg2.65a8a06669c76dbf9229.png",
+    "static/media/BeginerLvl.png": "/static/media/BeginerLvl.05c499db4ff96fe40868.png",
+    "static/media/playground.gif": "/static/media/playground.18bcba89d4290c3f7580.gif",
+    "static/media/coverImg1.png": "/static/media/coverImg1.459174da8b5379c21c4c.png",
+    "static/media/about-image.png": "/static/media/about-image.ed863928a4532f3c08fa.png",
+    "static/media/advanced.png": "/static/media/advanced.f7901fe0ba2bbe2357f5.png",
+    "static/media/practive.png": "/static/media/practive.12b478e0cca27559d4a7.png",
+    "static/media/about-image2.png": "/static/media/about-image2.ee547bd5761af0f54659.png",
+    "static/media/k8.png": "/static/media/k8.a849ad9689e110154249.png",
+    "static/media/about-image3.png": "/static/media/about-image3.938cde7d163bb34c6b24.png",
+    "static/media/IntermediateLvl.png": "/static/media/IntermediateLvl.fc925f825cbea2a365ef.png",
+    "static/media/foody.png": "/static/media/foody.fd6aa0dc27378ac4227b.png",
+    "static/media/ClashDisplay-Medium.woff2": "/static/media/ClashDisplay-Medium.88a32cc8fc026d95af05.woff2",
+    "static/media/ClashDisplay-Regular.woff2": "/static/media/ClashDisplay-Regular.98b52bdf102085f28108.woff2",
+    "static/media/ClashDisplay-Bold.woff2": "/static/media/ClashDisplay-Bold.e2f8628a6f360f644a76.woff2",
+    "static/media/revicons.eot": "/static/media/revicons.a77de540a38981833f9e.eot",
+    "static/media/revicons.ttf": "/static/media/revicons.57fd05d4ae650374c8de.ttf",
+    "static/media/revicons.woff": "/static/media/revicons.e8746a624ed098489406.woff",
+    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/index.html",
+    "static/media/arrow-right-long-svgrepo-com.svg": "/static/media/arrow-right-long-svgrepo-com.5d3dda1a0d9d7e0a34cb94f154f554b8.svg",
+    "static/media/cart.svg": "/static/media/cart.b4cfdd0dfa255785a6f0420a01791ba0.svg",
+    "main.eab6885f.css.map": "/static/css/main.eab6885f.css.map",
+    "main.f605f8d0.js.map": "/static/js/main.f605f8d0.js.map",
+    "787.5423a34b.chunk.js.map": "/static/js/787.5423a34b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.eab6885f.css",
+    "static/js/main.f605f8d0.js"
+  ]
+}

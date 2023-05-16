@@ -8,6 +8,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import UserPool from "./UserPool";
 import { CognitoUser, AuthenticationDetails } from "amazon-cognito-identity-js";
+import { Header } from "../../components/Header";
 
 const Register = () => {
     let navigate = useNavigate();
@@ -19,8 +20,15 @@ const Register = () => {
         setLoading(false);
         setIsSignedUp(true)
         UserPool.signUp(data.email, data.password, [], null, (err, data) => {
-            if (err) console.error(err);
-            console.log(data);
+          if (err) {
+            alert(err);
+            setIsSignedUp(false);
+            console.log(data);            
+          }          
+            // if (err == "InvalidParameterException: 3 validation errors detected: Value at 'password' failed to satisfy constraint: Member must satisfy regular expression pattern: ^[\S]+.*[\S]+$; Value at 'username' failed to satisfy constraint: Member must satisfy regular expression pattern: [\p{L}\p{M}\p{S}\p{N}\p{P}]+; Value at 'username' failed to satisfy constraint: Member must have length greater than or equal to 1") alert("Username Password Empty");    
+
+            
+            
             //props.onFormSwitch('registerverifyuser')
           });
         
@@ -49,6 +57,8 @@ const Register = () => {
     }
 
     return (
+      <>
+            <Header />
         <div className="h-screen bg-black flex items-center justify-center">
           <div className="rounded-lg max-w-md w-full flex flex-col items-center justify-center relative">
             <div className="absolute inset-0 transition duration-300 animate-pink blur gradient bg-gradient-to-tr from-rose-500 to-yellow-500"></div>
@@ -74,17 +84,22 @@ const Register = () => {
                 ) : (
                   <>
                     <div>
-                      <label htmlFor="name" className="block text-lg font-medium text-gray-200">
+                      {/* <label htmlFor="name" className="block text-lg font-medium text-gray-200">
                         Name
                       </label>
                       <input
-                        {...register('name')}
-                        id="name"
+                        {...register('name1')}
+                        id="name1"
                         type="text"
                         className="block appearance-none w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-gray-200 focus:border-gray-200"
-                      />
+                      /> */}
                     </div>
                     <div>
+                    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                  <label htmlFor="name2" className="block text-xl font-medium text-gray-200 mb-4"style={{ fontSize: '2rem' }}>
+                    Sign up
+                  </label>
+                  </div>
                       <label htmlFor="email" className="block text-lg font-medium text-gray-200">
                         Email
                       </label>
@@ -114,6 +129,7 @@ const Register = () => {
             </div>
           </div>
         </div>
+        </>
       );
       
 }

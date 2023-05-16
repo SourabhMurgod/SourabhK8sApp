@@ -8,6 +8,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { CognitoUser, AuthenticationDetails } from "amazon-cognito-identity-js";
 import UserPool from "./UserPool";
+import { Header } from "../../components/Header";
 
 const Login = () => {
     let navigate = useNavigate();
@@ -21,6 +22,7 @@ const Login = () => {
         console.log(data.email)
         const usr01=data.email
         const passwd01=data.password
+        const email01=data.email
         console.log(usr01+"success! new var is working")
         console.log(data.password)
         // console.log('https://sktptw0b55.execute-api.ap-south-1.amazonaws.com?user='+data.email)
@@ -41,7 +43,7 @@ const Login = () => {
             onSuccess: data => {
               console.log("onSuccess:", data);
               console.log(data.email)
-              console.log('https://sktptw0b55.execute-api.ap-south-1.amazonaws.com?user='+usr01)
+              // console.log('https://sktptw0b55.execute-api.ap-south-1.amazonaws.com?user='+usr01)
               fetch('https://sktptw0b55.execute-api.ap-south-1.amazonaws.com?user='+usr01+'&passwd='+passwd01)
               .then(response => response.json())
               .then(data => console.log(data))
@@ -59,13 +61,14 @@ const Login = () => {
                     progress: undefined,
                     theme: 'dark'
                     });
-                navigate('/menu');
+                navigate('/choosefield', { state: { email: email01 } });
             },
       
             onFailure: err => {
               console.error("onFailure:", err);
               alert(err);
-              window.location.href = '/Invalid';
+              // window.location.href = '/Invalid';
+              navigate('/login');
               //props.onFormSwitch('registerverifyuser')
             },
       
@@ -107,13 +110,21 @@ const Login = () => {
     
     }
     return (
+        <>
+        <Header />
         <div className="h-screen bg-black flex  items-center justify-center">
+          
             <div className="rounded-lg max-w-md w-full flex flex-col items-center justify-center relative">
                 <div className="absolute inset-0 transition duration-300 animate-pink blur  gradient bg-gradient-to-tr from-rose-500 to-yellow-500"></div>
                 <div className="p-10 rounded-xl z-10 w-full h-full bg-black">
                     <h5 className="text-3xl">Login</h5>
                 <form className="w-full space-y-6" onSubmit={handleSubmit(onSubmit)}>
                     <div>
+                    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                  <label htmlFor="name2" className="block text-xl font-medium text-gray-200 mb-4"style={{ fontSize: '2rem' }}>
+                    Sign in
+                  </label>
+                  </div>
                         <label 
                         htmlFor="email"
                         className="block text-lg font-medium text-gray-200">Email</label>
@@ -141,6 +152,7 @@ const Login = () => {
                 </div>
             </div>
         </div>
+        </>
     )
 }
 

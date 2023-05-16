@@ -1,11 +1,11 @@
-const mongoose = require('mongoose')
+var mysql = require('mysql');
 
-mongoose
-    .connect('mongodb://localhost:27017/food-ordering', { useNewUrlParser: true })
-    .catch(e => {
-        console.error('Connection error', e.message)
-    })
+var connection = mysql.createConnection({
+  host     : "kubernetesuserdb.cqzpdfyzcijo.ap-south-1.rds.amazonaws.com",
+  user     : "admin",
+  password : "Admin1234",
+  port     : "3306",
+  database: 'kubernetesuserdb'
+});
 
-const db = mongoose.connection
-
-module.exports = db
+connection.connect();
