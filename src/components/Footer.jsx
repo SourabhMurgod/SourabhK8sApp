@@ -29,7 +29,7 @@ export const Footer = () => {
                 </div>
             </div>
             <div class="py-6 px-4 bg-gray-700 md:flex md:items-center md:justify-between">
-                <span class="text-sm text-gray-300 sm:text-center">© 2023 Deepak Deepakraj Sourabh Ravi Bhupesh. All Rights Reserved.
+                <span class="text-sm text-gray-300 sm:text-center">© 2023 DevOps Interns. All Rights Reserved.
                 </span>
             </div>
         </footer>
