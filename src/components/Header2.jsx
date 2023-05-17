@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import Button from "./elements/Button";
 import { useEffect, useState } from "react";
-// import PersonIcon from '@mui/icons-material/Person';
+import PersonIcon from '@mui/icons-material/Person';
 
 export const Header2 = ({ email }) => {
     const navigate = useNavigate();
@@ -44,10 +44,10 @@ export const Header2 = ({ email }) => {
                 </div>
                 <div className="flex items-center justify-center space-x-4">
                     {/* display email id */}
-                    <Link to="/cart" className="mr-4 relative">
+                    {/* <Link to="/cart" className="mr-4 relative">
                         <Link to="#about" className="text-xl">{email}</Link>
-                    </Link>
-                    {/* <div 
+                    </Link> */}
+                    <div 
                         className="relative" 
                         onMouseEnter={() => setShowEmail(true)} 
                         onMouseLeave={() => setShowEmail(false)} 
@@ -60,7 +60,8 @@ export const Header2 = ({ email }) => {
                             <p className="text-gray-600 text-sm font-bold">{email}</p> 
                         </div> 
                     )} 
-                    </div> */}
+                    </div>
+
                     {
                         isLoggedIn ? 
                         <Button onClick={handleLogout}>Log Out</Button> : 

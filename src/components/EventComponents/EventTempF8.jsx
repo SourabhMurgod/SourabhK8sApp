@@ -16,7 +16,6 @@ export const EventTemp8 = ({ email }) => {
     console.log(email + " successfully recieved email in chooselvl page")
     const onSubmit1 = (data) => {
         navigate('/finalpractice', { state: { email: email } });
-
     }
 
     return (
